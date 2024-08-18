@@ -5,7 +5,19 @@
 # Description           :                                   #
 #                                                           #
 #############################################################
-#                                                           #
-# args1: prameter name                                      #
-#                                                           #
-#############################################################
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Cloud Formation {service} for {purpose}.
+
+#==========Parameters===============================================
+Parameters:
+  env:
+    Type: String
+    Default: dev
+    AllowedValues: [dev, stg, prod]
+
+#==========Resources===============================================
+Resources: write resources here !
+
+#==========Outputs===============================================
+Outputs:
